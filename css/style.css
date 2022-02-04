@@ -7,3 +7,125 @@
 html {
     font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.no-ul {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 90px;
+    height: calc(100vh - 90px);
+    padding: 1rem;
+    text-align: center;
+
+}
+
+header img {
+    width: 80%;
+    padding: .5rem 0;
+}
+
+.logo-big {
+    display: none;
+}
+
+.hdr-label {
+    display: none;
+}
+
+.half {
+    width: 50%;
+}
+
+main {
+    background-color: burlywood;
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    padding-right: 2em;
+}
+
+.bnr-btn {
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    padding: .8em 3em;
+    border-radius: 2em;
+    text-decoration: none;
+}
+
+.focus {
+    padding: 0 2em;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+}
+
+.nav-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-link {
+    line-height: 3em;
+    vertical-align: middle;
+    margin: 0 3em;
+    text-transform: uppercase;
+}
+
+.underline {
+    width: 30px;
+    margin-left: calc(50% - 15px);
+    border-bottom: 2px solid transparent;
+}
+
+.main-link a {
+    color: grey;
+}
+
+.main-link:hover .underline {
+    border-bottom: 2px solid yellow;
+}
+
+.recents {
+    margin: 0 -2em;
+}
+
+.cards {
+    display: inline-block;
+    margin: 2em;
+    text-align: center;
+    width: calc(100% / 2 - 6em);
+}
+
+.cards img {
+    width: 100%;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: grey;
+}
