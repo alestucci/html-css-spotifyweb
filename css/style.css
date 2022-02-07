@@ -17,6 +17,14 @@ body {
     text-decoration: none;
 }
 
+.white {
+    color: white;
+}
+
+.grey {
+    color: #555866;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -48,7 +56,7 @@ header img {
 }
 
 main {
-    background-color: burlywood;
+    background-color: #0a101d;
     width: 100%;
 }
 
@@ -58,7 +66,7 @@ main {
     align-items: center;
     height: 90px;
     width: 100%;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .3);
     padding-right: 2em;
 }
 
@@ -71,6 +79,10 @@ main {
     text-decoration: none;
 }
 
+.bnr-btn:hover {
+    transform: scale(1.1);
+}
+
 .focus {
     padding: 0 2em;
     height: calc(100vh - 180px);
@@ -81,27 +93,28 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1em 0 2em 0;
 }
 
 .main-link {
-    line-height: 3em;
+    line-height: 2em;
     vertical-align: middle;
-    margin: 0 3em;
+    margin: 0 1.5em;
     text-transform: uppercase;
 }
 
 .underline {
     width: 30px;
     margin-left: calc(50% - 15px);
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid yellow;
 }
 
 .main-link a {
     color: grey;
 }
 
-.main-link:hover .underline {
-    border-bottom: 2px solid yellow;
+.main-link:hover a {
+    color: white;
 }
 
 .recents {
@@ -113,12 +126,16 @@ main {
     margin: 2em;
     text-align: center;
     width: calc(100% / 2 - 6em);
+    vertical-align: top;
 }
 
 .cards img {
     width: 100%;
 }
 
+.round {
+    border-radius: 50%;
+}
 
 
 footer {
@@ -127,5 +144,5 @@ footer {
     left: 0;
     height: 90px;
     width: 100%;
-    background-color: grey;
+    background-color: #232323;
 }
