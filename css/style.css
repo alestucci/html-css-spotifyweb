@@ -25,6 +25,10 @@ body {
     color: #555866;
 }
 
+.bold {
+    font-weight: 900;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -39,15 +43,21 @@ header {
 
 header img {
     width: 40px;
-    padding: .5rem 0;
+    padding: .2rem 0;
 }
 
 .logo-big {
     display: none;
 }
 
+.playlist {
+    display: none;
+}
+
 .hdr-label {
     display: none;
+    color: white;
+    margin-left: .5em;
 }
 
 .profile {
@@ -59,7 +69,7 @@ header img {
 }
 
 .half {
-    width: 50%;
+    width: 25px;
 }
 
 main {
@@ -281,4 +291,46 @@ footer {
     header {
         width: 230px;
     }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+        display: inline-block;
+        width: 130px;
+        margin-bottom: 1em;
+    }
+
+    .hdr-lnk {
+        display: flex;
+        align-items: center;
+    }
+    
+    .hdr-inst {
+        display: flex;
+        align-items: center;
+    }
+
+    .hdr-label {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .playlist {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .plus-btn {
+        padding: 1em;
+        background-color: #999999;
+        color: white;
+    }
+
+    .hdr-lnk h3 {
+        padding-left: .2em;
+    }
+    
 }
